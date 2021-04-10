@@ -3,7 +3,7 @@
 #define  FAN_H
 #include "Arduino.h"
 #include "Component.h"
-#define FAN_PIN 6 // Needs to be PWM
+#define FAN_PIN 6 // Needs to be PWM pin
 
 class Fan: public Component {
 private:

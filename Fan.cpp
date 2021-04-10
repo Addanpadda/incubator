@@ -11,7 +11,8 @@ void Fan::setSpeed(const double &powerFactor) {
 }
 
 void Fan::applySpeed() const {
-  const int analogSpeed = (int)(255 * _powerFactor);
+  //const int analogSpeed = (int)(255 * _powerFactor);
   
-  analogWrite(FAN_PIN, analogSpeed);
+  //analogWrite(FAN_PIN, analogSpeed);
+  digitalWrite(FAN_PIN, HIGH);
 }

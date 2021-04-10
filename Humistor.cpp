@@ -17,7 +17,7 @@ double Humistor::resistanceToHumidity(unsigned const int &resistance) {
           resistance >= 5000    ? 0.75 :
           resistance >= 3525    ? 0.80 :
           resistance >= 2525    ? 0.85 :
-          resistance <  2525    ? 0.90 :
+          resistance <  2525    ? 0.90:
                            OUT_OF_RANGE;
 }
 

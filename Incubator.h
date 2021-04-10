@@ -15,7 +15,7 @@ struct IncubatorTemp
   static const double chicken = 37.5;
 };
 
-#define TURNEVERY 120 //3600 // Turn egges every hour (in seconds)
+#define TURNEVERY 3600 // Turn egges every hour (in seconds)
 #define INCUBATOR_SETPOINT IncubatorTemp::chicken
 
 class Incubator {
@@ -26,7 +26,8 @@ private:
   Fan *fan;
   EggTurner *eggTurner;
   Display *lcdDisplay;
-  TimeKeeper *timeKeeper;
+  TimeKeeper *turnerTimeKeeper;
+  
   void turnEggsIfNeeded();
 
 public:
